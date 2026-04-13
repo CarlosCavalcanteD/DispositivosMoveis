@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/footer"
+        android:layout_width="411dp"
+        android:layout_height="46dp"
+        android:background="#8A2C2C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:background="#8A2C2C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonCadastrarMercadoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="@color/gray"
+        android:onClick="handleChosenOptionBuscarMercadoria"
+        android:text="Buscar dados de Mercadoria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <Button
+        android:id="@+id/optionBuscarServico"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="@color/gray"
+        android:onClick="handleChosenOptionServicoNaoImplementado"
+        android:text="Buscar dados de Serviço"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/optionCadastrarServico"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="@color/gray"
+        android:onClick="handleChosenOptionServicoNaoImplementado"
+        android:text="Cadastrar Serviço"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/optionCadastrarMercadoria"
+        android:layout_width="230dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="@color/gray"
+        android:onClick="handleChosenOptionCadastrarMercadoria"
+        android:text="Cadastrar Mercadoria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.554" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
